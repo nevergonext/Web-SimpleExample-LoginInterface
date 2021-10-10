@@ -120,3 +120,37 @@ html::before {
     color: rgb(144,129,241);
 
 }
+
+.github-btn {
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px -6px rgba(243, 144, 199, 0.65);
+    background: #ff9ebe;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  @media screen and (min-width: 500px) {
+    .github-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(0, 0, 0, 0.36);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .github-btn {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      margin-top: 20px;
+    }
+    .github-btn:active {
+      transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+    }
+  }
