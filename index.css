@@ -17,6 +17,10 @@ html::before {
     background: linear-gradient(120deg, rgb(126, 161, 177) 0%,rgb(238, 163, 192) 100%) no-repeat;
 }
 
+::selection {
+    color: #fff;
+    background-color: rgb(238, 163 , 192);
+}
 .box {
     display: flex;
     overflow: hidden;
@@ -55,4 +59,64 @@ html::before {
 .box .right h4 {
     color: rgb(238, 147, 223);
     font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.box .right form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box .right form .useracc {
+    outline: none;
+    width: 80%;
+    height: 5em;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    padding: 1rem 0 0 1.6rem;
+    border: none;
+    border-bottom:1px solid rgb(238,163, 192);
+    color: rgb(238,163, 192);
+    background-color: rgba(0,0,0,0);
+}
+
+.right .form .acc:focus {
+    outline: none;
+    color: rgb(238, 163, 192);
+    padding: 1rem 0 0 1.6rem;
+}
+
+.right .submit {
+    width: 60%;
+    height: 5rem;
+    color:  #f6f6f6;
+    background-image: linear-gradient(120deg,#e0c3fc 0%,#8ec5fc 100%);
+    font-size: 1.4;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 6rem 0 0 50%;
+    transform: translateX(-50%);
+}
+
+.right .submit:hover {
+    box-shadow: 0 0 2rem -0.5rem rgb(0 0 0 / 15%);
+}
+
+.right .fn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.right .fn a {
+    font-size: 1.3rem;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    color: #666;
+}
+
+.right .fn a:hover {
+    color: rgb(144,129,241);
+
 }
